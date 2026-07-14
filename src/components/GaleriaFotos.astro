@@ -235,8 +235,9 @@
                 },
             });
 
-            // ── FOTOS: foto1.png ... foto12.png ──
-            const fotos = Array.from({ length: 12 }, (_, i) => i + 1)
+            // ── FOTOS: primero las nuevas, luego el resto ──
+            const ordenFotos = [13, 14, 15, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+            const fotos = ordenFotos
                 .map(n => ({ src: `/imagenes/foto${n}.png`, alt: `Foto ${n}` }));
 
             const DURACION = 4500;
